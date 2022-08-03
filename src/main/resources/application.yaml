@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: mongodb+srv://catalog-api:admin123@estudos.vant8hw.mongodb.net/catalog-api?retryWrites=true&w=majority
+    username: catalog-api
+    password: admin123
