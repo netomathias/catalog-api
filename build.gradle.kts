@@ -19,7 +19,7 @@ extra["springCloudVersion"] = "2021.0.3"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
-	implementation("org.springframework.data:spring-data-mongodb:3.4.2")
+	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
@@ -27,6 +27,8 @@ dependencies {
 	implementation("org.springframework.cloud:spring-cloud-config-server")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	implementation("org.modelmapper:modelmapper:3.1.0")
 }
 
 dependencyManagement {
