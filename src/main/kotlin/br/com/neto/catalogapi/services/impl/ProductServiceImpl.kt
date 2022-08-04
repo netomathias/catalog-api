@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service
 class ProductServiceImpl: ProductService {
 
     @Autowired
-    private lateinit var productRepository: ProductRepository
+    lateinit var productRepository: ProductRepository
 
     override fun getAll(): MutableList<ProductEntity> {
         return productRepository.findAll()
